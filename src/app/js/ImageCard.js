@@ -12,48 +12,42 @@ const ImageCard = ({ image }) => {
 
 
 
+// let galleryImages = document.querySelectorAll(".img");
+// let getLatestOpendImg;
+// let windowWidth = window.innerWidth;
 
-// function FullScale() {
-//     const element = document.img;
-//   element.classList.toggle("fullscale");
-// }
+// if(galleryImages) {
+//     galleryImages.forEach(function(image, index) {
+//         image.onclick = function() {
+//             // let getElementCss = window.getComputedStyle(image);
+//             // let getFullImgUrl = getElementCss.getPropertyValue("background-image")
+//             // let getImgUrlPos = getFullImgUrl.split("/img/thumbs/")
+//             let setNewImgUrl = image.webformatURL
+//             // getImgUrlPos[1].replace('")', '');
+//             console.log(image)
 
-let galleryImages = document.querySelectorAll(".img");
-let getLatestOpendImg;
-let windowWidth = window.innerWidth;
+//             // getLatestOpendImg = index + 1;
 
-if(galleryImages) {
-    galleryImages.forEach(function(image, index) {
-        image.onclick = function() {
-            // let getElementCss = window.getComputedStyle(image);
-            // let getFullImgUrl = getElementCss.getPropertyValue("background-image")
-            // let getImgUrlPos = getFullImgUrl.split("/img/thumbs/")
-            let setNewImgUrl = image.webformatURL
-            // getImgUrlPos[1].replace('")', '');
-            console.log(image)
+//             let container = document.body;
+//             let newImgWindow = document.createElement("div");
+//             container.appendChild(newImgWindow);
+//             newImgWindow.setAttribute("class", "img-window");
+//             newImgWindow.setAttribute("onclick", "closeImg()")
 
-            // getLatestOpendImg = index + 1;
-
-            let container = document.body;
-            let newImgWindow = document.createElement("div");
-            container.appendChild(newImgWindow);
-            newImgWindow.setAttribute("class", "img-window");
-            newImgWindow.setAttribute("onclick", "closeImg()")
-
-            let newImg = document.createElement("img");
-            newImgWindow.appendChild(newImg);
-            newImg.setAttribute("src", + image);    
+//             let newImg = document.createElement("img");
+//             newImgWindow.appendChild(newImg);
+//             newImg.setAttribute("src", + image);    
              
-            console.log(setNewImgUrl)
-            console.log(newImgWindow)
-            console.log(newImg) 
+//             console.log(setNewImgUrl)
+//             console.log(newImgWindow)
+//             console.log(newImg) 
  
-        }  
-    });     
-}
+//         }  
+//     });     
+// }
  
-function closeImg () {
-    document.querySelector(".img-window").remove();
-}
+// function closeImg () {
+//     document.querySelector(".img-window").remove();
+// }
 
 export default ImageCard;
